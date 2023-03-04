@@ -94,7 +94,7 @@ function addLikes(e) {
   })
     .then((response) => response.json())
     .then((data) => {
-      likeString = `${data["likes"]} likes`
+      e.target.previousElementSibling.innerText = `${data["likes"]} likes`
     }
     )
 }
